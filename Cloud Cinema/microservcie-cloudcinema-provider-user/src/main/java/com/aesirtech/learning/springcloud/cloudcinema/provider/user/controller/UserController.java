@@ -3,6 +3,7 @@ package com.aesirtech.learning.springcloud.cloudcinema.provider.user.controller;
 import com.aesirtech.learning.springcloud.cloudcinema.provider.user.entities.User;
 import com.aesirtech.learning.springcloud.cloudcinema.provider.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,12 +14,14 @@ import java.util.List;
  * @Author: Aesir
  * @Date: 2019/4/19 21:13
  */
-
 @RestController
 public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
     @RequestMapping(value = "user/post", method = RequestMethod.POST)
     public boolean post(@RequestBody User user) {
@@ -33,5 +36,10 @@ public class UserController {
     @RequestMapping(value = "user/list", method = RequestMethod.GET)
     public List<User> list() {
         return userService.list();
+    }
+
+    @RequestMapping(value = "user/discovery", method = RequestMethod.GET)
+    public Object discovery() {
+        return this.discoveryClient;
     }
 }

@@ -31,6 +31,13 @@ eureka:
   client:
     service-url:
       # 史上巨坑 default-zone
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
+       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka01.com:8761/eureka/, http://${spring.security.user.name}:${spring.security.user.password}@eureka02.com:8762/eureka/, http://${spring.security.user.name}:${spring.security.user.password}@eureka03.com:8763/eureka/
   instance:
+    instance-id: microservice-cloudcinema-provider-user:8001
     prefer-ip-address: true
+
+info:
+  app.name: microservice-cloudcinema-provider-user
+  company.name: www.aesirtech.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
