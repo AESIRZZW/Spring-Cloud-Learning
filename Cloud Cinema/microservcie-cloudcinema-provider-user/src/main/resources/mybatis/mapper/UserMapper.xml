@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.aesirtech.learning.springcloud.cloudcinema.provider.user.dao.UserDao">
+
+    <select id="findById" resultType="User" parameterType="Long">
+		SELECT id,user_name,name,age,sex,balance FROM user WHERE id = #{id};
+	</select>
+    <select id="findAll" resultType="User">
+		SELECT id,user_name,name,age,sex,balance from user;
+	</select>
+    <insert id="addUser" parameterType="User">
+		insert into user(user_name,name,age,sex,balance) VALUES(#{userName},#{name},#{age},#{sex},#{balance});
+	</insert>
+
+</mapper>
