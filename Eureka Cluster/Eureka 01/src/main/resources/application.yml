@@ -11,9 +11,10 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka01.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+       defaultZone: http://aesir:${spring.security.user.password}@eureka02.com:8762/eureka/, http://${spring.security.user.name}:${spring.security.user.password}@eureka03.com:8763/eureka/

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Eureka 01/Eureka 01.iml" filepath="$PROJECT_DIR$/Eureka 01/Eureka 01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eureka 02/Eureka 02.iml" filepath="$PROJECT_DIR$/Eureka 02/Eureka 02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eureka 03/Eureka 03.iml" filepath="$PROJECT_DIR$/Eureka 03/Eureka 03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Eureka Cluster.iml" filepath="$PROJECT_DIR$/Eureka Cluster.iml" />
     </modules>
   </component>

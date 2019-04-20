@@ -5,6 +5,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>Eureka 01</module>
+        <module>Eureka 02</module>
+        <module>eureka-03</module>
+        <module>Eureka 03</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

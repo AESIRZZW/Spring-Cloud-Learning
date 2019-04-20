@@ -1,0 +1,19 @@
+server:
+  port: 8763
+
+spring:
+  security:
+    basic:
+      enabled: true
+    user:
+      name: aesir
+      password: 123456
+
+eureka:
+  instance:
+    hostname: eureka03.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka01.com:8761/eureka/, http://${spring.security.user.name}:${spring.security.user.password}@eureka02.com:8762/eureka/
