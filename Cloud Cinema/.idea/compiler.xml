@@ -6,19 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Cloud Cinema" />
-        <module name="microservcie-cloudcinema-provider-user" />
+        <module name="microservice-cloudcinema-consumer-user" />
+        <module name="microservice-cloudcinema-provider-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Cloud Cinema" target="11" />
-      <module name="microservcie-cloudcinema-provider-user" target="11" />
+      <module name="microservice-cloudcinema-comsumer-user" target="11" />
+      <module name="microservice-cloudcinema-consumer-user" target="11" />
+      <module name="microservice-cloudcinema-provider-user" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Cloud Cinema" options="-parameters" />
-      <module name="microservcie-cloudcinema-provider-user" options="-parameters" />
+      <module name="microservice-cloudcinema-comsumer-user" options="-parameters" />
+      <module name="microservice-cloudcinema-consumer-user" options="-parameters" />
+      <module name="microservice-cloudcinema-provider-user" options="-parameters" />
     </option>
   </component>
 </project>

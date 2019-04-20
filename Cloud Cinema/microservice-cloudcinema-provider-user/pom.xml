@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.aesirtech.learning.springcloud.cloudcinema</groupId>
-    <artifactId>microservcie-cloudcinema-provider-user</artifactId>
+    <artifactId>microservice-cloudcinema-provider-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Microservcie Cloud Cinema Provider User</name>
+    <name>Microservice Cloud Cinema Provider User</name>
     <description>User Service Provider</description>
 
 </project>

@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cloud Cinema.iml" filepath="$PROJECT_DIR$/Cloud Cinema.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservcie-cloudcinema-provider-user/microservcie-cloudcinema-provider-user.iml" filepath="$PROJECT_DIR$/microservcie-cloudcinema-provider-user/microservcie-cloudcinema-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-cloudcinema-consumer-user/microservice-cloudcinema-consumer-user.iml" filepath="$PROJECT_DIR$/microservice-cloudcinema-consumer-user/microservice-cloudcinema-consumer-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-cloudcinema-provider-user/microservice-cloudcinema-provider-user.iml" filepath="$PROJECT_DIR$/microservice-cloudcinema-provider-user/microservice-cloudcinema-provider-user.iml" />
     </modules>
   </component>
 </project>

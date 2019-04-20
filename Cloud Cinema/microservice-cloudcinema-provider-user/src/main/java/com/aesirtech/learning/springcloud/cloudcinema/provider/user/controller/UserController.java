@@ -23,22 +23,22 @@ public class UserController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @RequestMapping(value = "user/post", method = RequestMethod.POST)
+    @RequestMapping(value = "provider/user/post", method = RequestMethod.POST)
     public boolean post(@RequestBody User user) {
         return userService.post(user);
     }
 
-    @RequestMapping(value = "user/get/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "provider/user/get/{id}", method = RequestMethod.GET)
     public User get(@PathVariable("id") Long id) {
         return userService.get(id);
     }
 
-    @RequestMapping(value = "user/list", method = RequestMethod.GET)
+    @RequestMapping(value = "provider/user/list", method = RequestMethod.GET)
     public List<User> list() {
         return userService.list();
     }
 
-    @RequestMapping(value = "user/discovery", method = RequestMethod.GET)
+    @RequestMapping(value = "provider/user/discovery", method = RequestMethod.GET)
     public Object discovery() {
         return this.discoveryClient;
     }

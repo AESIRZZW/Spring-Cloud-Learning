@@ -1,0 +1,35 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: microservice-cloudcinema-consumer-user
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.105:3306/cloud_cinema
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 10
+      max-wait-millis: 200
+  security:
+    user:
+      name: aesir
+      password: 123456
+
+eureka:
+  client:
+    service-url:
+       defaultZone: http://aesir:123456@eureka01.com:8761/eureka/, http://aesir:123456@eureka02.com:8762/eureka/, http://aesir:123456@eureka03.com:8763/eureka/
+  instance:
+    instance-id: microservice-cloudcinema-consumer-user:80
+    prefer-ip-address: true
+
+info:
+  app.name: microservice-cloudcinema-consumer-user
+  company.name: www.aesirtech.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
